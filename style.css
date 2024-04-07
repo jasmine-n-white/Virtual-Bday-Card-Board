@@ -1,31 +1,79 @@
-myForm {
-
+#myForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-textarea {
-
+#myForm input, #myForm textarea {
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid grey;
 }
 
-input[type="submit"]:hover {
+#myForm textarea {
+    resize: -internal-textarea-auto;
+    overflow: scroll;
+}
 
+button[type="submit"] {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: pink;
+    color: black;
+   
 }
 
 .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 
 }
 
 .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 
 }
 
 .card img {
+    max-width: 100%;
+    border-radius: 4px;
 
 }
 
 .card h3 {
-
+    margin-top: 0;
 }
 
 .card p {
+    margin-bottom: 0;
+}
 
+.feature-btn {
+    background-color: green;
+
+
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+ 
 }

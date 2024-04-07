@@ -10,18 +10,14 @@
 
   <!-- Content of your web application goes here -->
 <form id = "myForm">
-    <label for="name">Name: </label>
-    <input type="text" id="name" name="name" required>
-    <label for="message">Personal Message:</label>
-    <input type="textarea" id="message" rows="4" cols="50" required>
-    <br>
-    <label for="">Image: </label>
-    <input type="url" id="image" name="image" required>
+    <input type="text" id="name" name="name" placeholder="Recipient's Name" required>
+    <input type="textarea" id="message" rows="4" cols="50" placeholder="Personal Message" required>
+    <input type="url" id="image" name="image" placeholder="Image/GIF URL" required>
 
-    <input type="submit" value="submit">
+    <button type="submit" name="create-card" id="create-card-btn">Create Card</button>
 </form>
 <div id="cardGrid" class="grid-container"></div>
-
+  
 
 
 
