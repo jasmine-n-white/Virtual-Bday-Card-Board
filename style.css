@@ -1,4 +1,12 @@
+body {
+    background: url(https://wallpapers.com/images/hd/pink-pastel-background-4k3cxd1n45bxqf7q.jpg), rgb(90, 134, 222);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #myForm {
+    background-color: #5263d0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -22,7 +30,7 @@
 }
 
 button[type="submit"] {
-    background-color: green;
+    background-color: coral;
     color: #fff;
     padding: 10px 20px;
     border: none;
