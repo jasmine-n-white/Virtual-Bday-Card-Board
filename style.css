@@ -75,5 +75,6 @@ button[type="submit"]:hover {
 .delete-btn {
     background-color: red;
     color: white;
+    border-radius: 5px;
  
 }

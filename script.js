@@ -28,8 +28,9 @@ function createCard() {
     // btn.querySelector(".feature-btn").addEventListener("click", function() {
         
     // });
-    // btn.querySelector(".delete-btn").addEventListener("click", function() {
-    // });
+    card.querySelector(".delete-btn").addEventListener("click", function() {
+        card.remove();
+    });
     //append card to grid
     document.getElementById("cardGrid").appendChild(card);
 }
