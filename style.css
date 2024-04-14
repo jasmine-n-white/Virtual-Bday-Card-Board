@@ -1,10 +1,15 @@
 body {
-    background: url(https://wallpapers.com/images/hd/pink-pastel-background-4k3cxd1n45bxqf7q.jpg), rgb(90, 134, 222);
-    background-blend-mode: luminosity;
+    background: url(https://plus.unsplash.com/premium_photo-1676166012471-1da1e1c6aa14?q=80&w=2867&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D), rgba(39,41,109, 0.75);
+    background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+header {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 #myForm {
     background-color: #5263d0;
     display: flex;
@@ -53,29 +58,41 @@ button[type="submit"]:hover {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #a1fdff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+
 
 }
 
 .card img {
     max-width: 100%;
     border-radius: 4px;
+    max-height: 100%;
+    justify-self: center;
 
 }
 
 .card h3 {
     margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 
 .card p {
     margin-bottom: 0;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .feature-btn {
-    background-color: green;
+    background-color: rgb(30, 9, 101);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
 
 
 }
@@ -84,10 +101,22 @@ button[type="submit"]:hover {
     background-color: red;
     color: white;
     border-radius: 5px;
- 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .feature {
     border: 2px solid gold;
     font-weight: bold;
 }
+
+.validInput {
+    color: green;
+}
+
