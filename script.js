@@ -36,16 +36,33 @@ function createCard() {
 }
 
 //form validation
-// function checkValidity() {
-//     let inputName = document.getElementById("name");
-//     if (!inputName.validity.valid) {
-//         inputName.setCustomValidity("Please enter a name!");
-//     }
-// }
+
+
+function checkForm() {
+    let inputName = document.getElementById("name");
+    let message = document.getElementById("message");
+    let imageURL = document.getElementById("image");
+    
+    validateName(inputName);
+    // validateMessage(message);
+    // validateImage(imageURL);
+}
 
 myForm.addEventListener("submit", function(event) {
     event.preventDefault();
     createCard();
 });
 
+function isAlpha(str) {
+    return /^[A-Za-z]+$/.test(str);
+  }
 
+function validateName(input) {
+    if (input.validity.valid) {
+        if (!isAlpha(input.value)) {
+            inputName.setCustomValidity("Name can only contain letters!");
+        }
+    } else {
+        inputName.setCustomValidity("Please enter a name!");
+    }
+}
