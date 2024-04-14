@@ -86,3 +86,8 @@ button[type="submit"]:hover {
     border-radius: 5px;
  
 }
+
+.feature {
+    border: 2px solid gold;
+    font-weight: bold;
+}

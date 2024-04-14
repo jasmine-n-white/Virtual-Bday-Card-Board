@@ -25,15 +25,23 @@ function createCard() {
     deleteCard.innerHTML = `<button class="delete-btn">Delete</button>`;
     card.appendChild(deleteCard);
     //event listeners for the feature and delete buttons
-    // btn.querySelector(".feature-btn").addEventListener("click", function() {
-        
-    // });
+    card.querySelector(".feature-btn").addEventListener("click", function() {
+        card.classList.toggle("feature");
+    });
     card.querySelector(".delete-btn").addEventListener("click", function() {
         card.remove();
     });
     //append card to grid
     document.getElementById("cardGrid").appendChild(card);
 }
+
+//form validation
+// function checkValidity() {
+//     let inputName = document.getElementById("name");
+//     if (!inputName.validity.valid) {
+//         inputName.setCustomValidity("Please enter a name!");
+//     }
+// }
 
 myForm.addEventListener("submit", function(event) {
     event.preventDefault();
