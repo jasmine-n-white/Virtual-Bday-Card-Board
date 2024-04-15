@@ -54,7 +54,7 @@ function checkForm() {
     let imageURL = document.getElementById("image");
 
 
-
+//check validity of name input 
     if (inputName.validity.valueMissing) {
         inputName.setCustomValidity("Please enter a name!");
      } else if (!isAlpha(inputName.value)) {
@@ -63,13 +63,13 @@ function checkForm() {
      } else {
         inputName.setCustomValidity("");
      }
-
+//check validity of personsal message input
      if (message.validity.valueMissing) {
         message.setCustomValidity("Please enter a message!");
      } else {
         message.setCustomValidity("");
      }
-
+//check validity of GIF/image URL
      if (imageURL.validity.valueMissing) {
         imageURL.setCustomValidity("Please enter an image or GIF URL!");
      }  else if (imageURL.validity.typeMismatch){
