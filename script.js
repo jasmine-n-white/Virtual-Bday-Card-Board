@@ -25,7 +25,7 @@ function createCard() {
     featureCard.innerHTML = `<button class="feature-btn">✨Feature✨</button>`;
     buttonSection.appendChild(featureCard);
     const deleteCard = document.createElement("btn");
-    deleteCard.innerHTML = `<button class="delete-btn">❌Delete❌</button>`;
+    deleteCard.innerHTML = `<button class="delete-btn">✖️Delete✖️</button>`;
     buttonSection.appendChild(deleteCard);
     //event listeners for the feature and delete buttons
     card.querySelector(".feature-btn").addEventListener("click", function() {

@@ -1,23 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&display=swap');
+
+
+
 body {
-    background: url(https://plus.unsplash.com/premium_photo-1676166012471-1da1e1c6aa14?q=80&w=2867&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D), rgba(39,41,109, 0.75);
-    background-blend-mode:multiply;
+    background: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D), rgba(0, 0, 0, 0.65);
+    background-blend-mode: soft-light;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    font-family: 'Caveat Brush';
+    color: white;
 }
+
+.instructions {
+    text-align: center;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px 450px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #myForm {
-    background-color: #5263d0;
+    background-color: #f6318c;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin:  10px 300px;
+    border: 1px solid #f6318c;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -26,7 +48,9 @@ header {
 #myForm input, #myForm textarea {
    padding: 10px;
    border-radius: 5px;
-   border: 1px solid grey;
+   border: 1px #fff2be;
+   background-color: #fff2be;
+
 }
 
 #myForm textarea {
@@ -35,8 +59,8 @@ header {
 }
 
 button[type="submit"] {
-    background-color: coral;
-    color: #fff;
+    background-color: pink;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -44,7 +68,7 @@ button[type="submit"] {
     font-size: 16px;
 }
 button[type="submit"]:hover {
-    background-color: pink;
+    background-color: #a0eecc;
     color: black;
    
 }
@@ -58,19 +82,22 @@ button[type="submit"]:hover {
 }
 
 .card {
-    background-color: #a1fdff;
+    background-color: rgba(161,253,255, 0.5);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-
+    animation: fadeInAnimation ease-in-out 3s;
 
 }
 
 .card img {
-    max-width: 100%;
+    display: flex;
+    width: 100%;
     border-radius: 4px;
-    max-height: 100%;
-    justify-self: center;
+    border: 1px solid grey;
+    height: 300px;
+    justify-content: center;
+    background-color: white;
 
 }
 
@@ -81,7 +108,8 @@ button[type="submit"]:hover {
 }
 
 .card p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
     text-align: center;
     padding: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -90,19 +118,19 @@ button[type="submit"]:hover {
 .feature-btn {
     background-color: rgb(30, 9, 101);
     color: white;
+    margin-top: 15px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0;
 
 
 }
 
 .delete-btn {
-    background-color: red;
-    color: white;
+    background-color: #fff2be;
+    color: black;
+    margin-top: 15px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0;
 
 }
 
@@ -112,11 +140,16 @@ button[type="submit"]:hover {
 }
 
 .feature {
-    border: 2px solid gold;
+    box-shadow: 0 0 10px rgb(223, 233, 86);
     font-weight: bold;
 }
 
-.validInput {
-    color: green;
-}
 
+@keyFrames fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
